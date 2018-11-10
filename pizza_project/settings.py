@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pizza_db',         # Or path to database file if using sqlite3.
-        'USER': 'artak',                      # Not used with sqlite3.
+        'USER': 'django',                      # Not used with sqlite3.
         'PASSWORD': 'test123',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
