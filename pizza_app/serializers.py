@@ -10,17 +10,18 @@ class CustomerSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class CustomerOrderSerializer(serializers.ModelSerializer):
-    customer = CustomerSerializer()
-
+class PizzaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Order
+        model = Pizza
         fields = "__all__"
 
 
-class PizzaSerializer(serializers.ModelField):
+class CustomerOrderSerializer(serializers.ModelSerializer):
+    customer = CustomerSerializer()
+    pizza = PizzaSerializer()
+
     class Meta:
-        model = Pizza
+        model = Order
         fields = "__all__"
 
 
